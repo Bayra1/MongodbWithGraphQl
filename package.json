@@ -12,8 +12,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "type": "module",
   "dependencies": {
     "@apollo/server": "^4.10.2",
+    "apollo-server-express": "^3.13.0",
     "cores": "^0.8.5",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
