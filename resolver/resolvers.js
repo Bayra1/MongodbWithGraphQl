@@ -14,6 +14,7 @@ const myResolvers = {
         throw new Error("Failed to fetch user", error);
       }
     },
+    
     fetchAllUsers: async () => {
       try {
         const allUsers = await userModel.find();
@@ -41,6 +42,7 @@ const myResolvers = {
         throw new Error("Failed to create a new user", error);
       }
     },
+
     deleteUserById: async (_, { userId }) => {
       try {
         await userModel.findByIdAndDelete(userId);
@@ -50,6 +52,7 @@ const myResolvers = {
         throw new Error("Failed to delete user");
       }
     },
+
     updateUser: async (_, { input }) => {
       try {
         const { id, name, email, password, age } = input;
